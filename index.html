@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Logo SVG CODE</title>
+  <!-- Prism.js for syntax highlighting -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1e1e;
+      color: #ccc;
+      height: 500vh;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 30rem auto 0 auto;
+    }
+
+    h2 {
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    .code-wrapper {
+      position: relative;
+      margin-top: 1rem;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 4px;
+      fill: #bbb;
+      transition: fill 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      fill: #fff;
+    }
+
+    .copied-msg {
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      color: #4caf50;
+      font-size: 0.85rem;
+      display: none;
+    }
+
+    .code-block {
+      background-color: #2d2d2d;
+      border-radius: 8px;
+      overflow: auto;
+      padding: 1rem;
+      box-shadow: 0 0 10px #000;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+    }
+    
+    .loading-page {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      z-index: 1000;
+    }
+    #svg {
+      height: 350px;
+      width: 350px;
+      stroke: url(#gradient); /* Gradient stroke */
+      fill: none; /* Ensure no fill */
+      stroke-width: 6px;
+      filter: drop-shadow(0 0 10px #10B981) drop-shadow(0 0 20px #3B82F6); /* Gradient-like glow */
+    }
+    #outer-triangle, #slash, #right-arrow, #left-arrow, #inner-triangle {
+      stroke-dasharray: 0; /* Initial value, set by JavaScript */
+      stroke-dashoffset: 0; /* Initial value, set by JavaScript */
+      animation: draw 4s ease forwards; /* 4s animation */
+    }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; } /* Animate to fully visible */
+    }
+    .name-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo-name {
+      color: #ffffff; /* White text */
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px; /* Larger font */
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      text-shadow: 
+        0 0 5px #10B981,
+        0 0 10px #10B981,
+        0 0 15px #3B82F6,
+        0 0 20px #3B82F6; /* Gradient-like shadow */
+      animation: from-bottom 4s ease forwards; /* Slide up and fade in */
+    }
+    @keyframes from-bottom {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loading-page">
+  <svg id="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt" height="147.000000pt" viewBox="0 0 300.000000 147.000000" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <g transform="translate(0.000000,147.000000) scale(0.100000,-0.100000)" stroke="url(#gradient)" fill="none">
+      <!-- Triangle -->
+      <path id="outer-triangle" d="M1468 1333 c-9 -10 -37 -58 -63 -108 -41 -76 -91 -166 -240 -430 -12 -22 -46 -85 -75 -140 -29 -55 -94 -174 -144 -265 -125 -225 -132 -244 -102 -269 10 -8 146 -12 480 -14 l467 -3 -6 26 c-4 14 -20 49 -36 78 l-30 52 -282 1 c-155 1 -294 0 -309 -1 -14 -1 -29 3 -32 8 -8 13 50 129 219 437 144 263 181 325 196 325 8 0 62 -90 166 -280 98 -177 109 -198 161 -283 23 -37 42 -69 42 -71 0 -2 17 -33 39 -68 21 -35 54 -95 74 -134 19 -38 43 -76 51 -83 9 -8 39 -14 68 -14 41 -1 54 3 69 22 17 21 17 25 3 59 -14 34 -179 333 -246 445 -15 26 -28 49 -28 52 0 2 -24 48 -53 102 -30 54 -71 130 -92 168 -110 204 -200 363 -218 383 -24 26 -58 29 -79 5z"/>
+      <!-- Slash -->
+      <path id="slash" d="M2327 943 c-5 -8 -65 -214 -116 -398 -40 -145 -40 -157 7 -192 20 -15 40 -32 43 -37 10 -13 14 -1 48 124 52 192 60 222 87 315 14 50 28 97 31 106 6 21 -90 99 -100 82z"/>
+      <!-- Right Arrow -->
+      <path id="right-arrow" d="M493 761 c-248 -146 -287 -172 -291 -194 -5 -26 11 -41 101 -93 167 -95 323 -188 364 -216 60 -40 73 -38 72 15 -3 100 6 92 -277 250 -29 16 -51 34 -49 40 2 6 73 52 158 102 137 80 154 93 157 119 5 42 -7 96 -21 96 -7 -1 -103 -54 -214 -119z"/>
+      <!-- Left Arrow -->
+      <path id="left-arrow" d="M2489 783 c-27 -73 -27 -74 65 -138 86 -60 100 -78 70 -89 -9 -3 -61 -36 -115 -73 -89 -59 -99 -70 -104 -102 -3 -20 -10 -53 -16 -74 -6 -22 -8 -41 -6 -44 3 -2 27 12 55 31 27 20 53 36 57 36 4 0 25 13 48 29 23 16 101 67 173 114 72 47 135 90 138 96 4 6 3 18 -2 28 -10 16 -326 213 -343 213 -5 0 -14 -12 -20 -27z"/>
+      <!-- Inner Triangle -->
+      <path id="inner-triangle" d="M1441 612 c-22 -43 -54 -103 -71 -133 -47 -79 -43 -81 135 -80 83 1 154 6 159 11 4 4 -24 68 -65 144 -92 170 -100 173 -158 58z"/>
+    </g>
+  </svg>
+  <div class="name-container">
+    <div class="logo-name">Debug Delta</div>
+  </div>
+</div>
+
+  <main>
+    <h2>HTML Code</h2>
+    <div class="code-wrapper">
+      <button class="copy-btn" title="Copy Code">
+        <!-- Clipboard SVG Icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24">
+          <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z"/>
+        </svg>
+      </button>
+      <span class="copied-msg">Copied!</span>
+      <div class="code-block">
+        <pre><code class="language-html">
+&lt;!-- Loader --&gt;
+&lt;div class="loading-page"&gt;
+  &lt;svg id="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="300.000000pt" height="147.000000pt" viewBox="0 0 300.000000 147.000000" preserveAspectRatio="xMidYMid meet"&gt;
+    &lt;defs&gt;
+      &lt;linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"&gt;
+        &lt;stop offset="0%" style="stop-color:#10B981;stop-opacity:1" /&gt;
+        &lt;stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" /&gt;
+      &lt;/linearGradient&gt;
+    &lt;/defs&gt;
+    &lt;g transform="translate(0.000000,147.000000) scale(0.100000,-0.100000)" stroke="url(#gradient)" fill="none"&gt;
+      &lt;path id="outer-triangle" d="M1468 1333 ..."/&gt;
+      &lt;path id="slash" d="M2327 943 ..."/&gt;
+      &lt;path id="right-arrow" d="M493 761 ..."/&gt;
+      &lt;path id="left-arrow" d="M2489 783 ..."/&gt;
+      &lt;path id="inner-triangle" d="M1441 612 ..."/&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;div class="name-container"&gt;
+    &lt;div class="logo-name"&gt;Debug Delta&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+      </div>
+    </div>
+
+    <h2>CSS Code</h2>
+    <div class="code-wrapper">
+      <button class="copy-btn" title="Copy Code">
+        <svg width="20" height="20" viewBox="0 0 24 24">
+          <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z"/>
+        </svg>
+      </button>
+      <span class="copied-msg">Copied!</span>
+      <div class="code-block">
+        <pre><code class="language-css">
+.loading-page {
+      position: absolute;
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.9); /* Black background */
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      z-index: 1000;
+    }
+    #svg {
+      height: 350px;
+      width: 350px;
+      stroke: url(#gradient); /* Gradient stroke */
+      fill: none; /* Ensure no fill */
+      stroke-width: 6px;
+      filter: drop-shadow(0 0 10px #10B981) drop-shadow(0 0 20px #3B82F6); /* Gradient-like glow */
+    }
+    #outer-triangle, #slash, #right-arrow, #left-arrow, #inner-triangle {
+      stroke-dasharray: 0; /* Initial value, set by JavaScript */
+      stroke-dashoffset: 0; /* Initial value, set by JavaScript */
+      animation: draw 4s ease forwards; /* 4s animation */
+    }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; } /* Animate to fully visible */
+    }
+    .name-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo-name {
+      color: #ffffff; /* White text */
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px; /* Larger font */
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      text-shadow: 
+        0 0 5px #10B981,
+        0 0 10px #10B981,
+        0 0 15px #3B82F6,
+        0 0 20px #3B82F6; /* Gradient-like shadow */
+      animation: from-bottom 4s ease forwards; /* Slide up and fade in */
+    }
+    @keyframes from-bottom {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+        </code></pre>
+      </div>
+    </div>
+
+    <h2>JavaScript Code</h2>
+    <div class="code-wrapper">
+      <button class="copy-btn" title="Copy Code">
+        <svg width="20" height="20" viewBox="0 0 24 24">
+          <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z"/>
+        </svg>
+      </button>
+      <span class="copied-msg">Copied!</span>
+      <div class="code-block">
+        <pre><code class="language-javascript">
+// Set stroke-dasharray and stroke-dashoffset dynamically for animated paths
+  document.addEventListener('DOMContentLoaded', () => {
+    const paths = ['outer-triangle', 'slash', 'right-arrow', 'left-arrow', 'inner-triangle'];
+    paths.forEach(id => {
+      const path = document.getElementById(id);
+      const pathLength = path.getTotalLength();
+      path.style.strokeDasharray = pathLength;
+      path.style.strokeDashoffset = pathLength;
+    });
+  });
+
+  // Initialize 3D tilt effect
+  VanillaTilt.init(document.querySelectorAll('.project-card, .skill-item, .stat-item'), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+    scale: 1.05
+  });
+        </code></pre>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Prism JS -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-html.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+  <!-- Copy to Clipboard Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const codeBlock = btn.nextElementSibling.nextElementSibling.querySelector('code');
+        const text = codeBlock.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          const msg = btn.nextElementSibling;
+          msg.style.display = 'inline';
+          setTimeout(() => {
+            msg.style.display = 'none';
+          }, 1500);
+        });
+      });
+    });
+    // Set stroke-dasharray and stroke-dashoffset dynamically for animated paths
+  document.addEventListener('DOMContentLoaded', () => {
+    const paths = ['outer-triangle', 'slash', 'right-arrow', 'left-arrow', 'inner-triangle'];
+    paths.forEach(id => {
+      const path = document.getElementById(id);
+      const pathLength = path.getTotalLength();
+      path.style.strokeDasharray = pathLength;
+      path.style.strokeDashoffset = pathLength;
+    });
+  });
+
+  // Initialize 3D tilt effect
+  VanillaTilt.init(document.querySelectorAll('.project-card, .skill-item, .stat-item'), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3,
+    scale: 1.05
+  });
+  </script>
+</body>
+</html>
+
+
